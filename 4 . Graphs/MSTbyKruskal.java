@@ -133,5 +133,28 @@ public class KruskalsMST {
 			= findRoot(subsets, subsets[i].parent);
 		return subsets[i].parent;
 	}
-}
-// This code is contributed by Salvino D'sa
+}/*This Java program demonstrates the implementation of Kruskal's algorithm for finding the Minimum Spanning Tree (MST) of a given graph. Here's a short description of the code:
+
+The code defines two nested classes: Edge to represent edges in the graph and Subset to represent subsets used for cycle detection.
+
+In the main method, a sample graph with 4 vertices and a list of edges is created. The edges are sorted in non-decreasing order of their weights.
+
+The kruskals function is called to find the MST. It takes the number of vertices (V) and a list of edges as parameters.
+
+Inside the kruskals function:
+
+Memory is allocated for subsets and results.
+Initially, each vertex is treated as a separate subset.
+The program iterates through the sorted edges, selecting the smallest edge that doesn't create a cycle in the MST.
+If adding an edge to the MST doesn't form a cycle, it's included in the result.
+The union function is used to merge subsets.
+The process continues until V-1 edges have been added to the MST.
+After constructing the MST, the code prints the edges and their weights, as well as the total cost of the MST.
+
+Kruskal's algorithm is a greedy algorithm used to find the MST of a graph by iteratively selecting edges with the smallest weight while avoiding cycles. This code efficiently demonstrates the algorithm's core concepts and implementation in Java.*/
+
+
+
+
+
+
